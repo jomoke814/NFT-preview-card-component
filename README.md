@@ -16,8 +16,8 @@ The users should be able to:
 - CSS Grid
 
 ### Live preview links for the project
-- Live site:
-- Solution URL:
+- Live site: https://jomoke814.github.io/NFT-preview-card-component/
+- Solution URL: https://github.com/jomoke814/NFT-preview-card-component
 ### The desired outcome[screenshots]
 - Desktop and Mobile designs:
 ![desired outcome](./images/desktop-design.jpg)
