@@ -111,9 +111,13 @@ hr {
 }
 
 .attribution {
+    position: absolute;
+    top: 200px;
+    left: 95%;
     color: #54bfb5;
     font-size: 11px;
     text-align: center;
+    writing-mode: vertical-rl;
 }
 
 .attribution a {
