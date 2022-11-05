@@ -12,6 +12,7 @@
     --main-heading-color: hsl(0, 0%, 100%);
     --main-text-color: hsl(215, 51%, 70%);
     --main-crypto-color: hsl(178, 100%, 50%);
+    --main-overlay-color: hsl(178, 100%, 50%, 0.5);
     --main-line-color: hsl(215, 32%, 27%);
 }
 
@@ -32,6 +33,11 @@ h1 {
     font-size: 1rem;
 }
 
+h1:hover {
+    color: var(--main-crypto-color);
+    cursor: pointer;
+}
+
 h2 {
     color: var(--main-text-color);
     font-size: 1rem;
@@ -40,6 +46,11 @@ h2 {
 
 span {
     color: var(--main-heading-color);
+}
+
+span:hover {
+    color: var(--main-crypto-color);
+    cursor: pointer;
 }
 
 p {
@@ -64,6 +75,40 @@ p {
     width: 300px;
 }
 
+.image-equil {
+    position: relative;
+}
+
+.img-overlay {
+    display: none;
+    background: var(--main-overlay-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.img-overlay .eye {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 50px;
+}
+
+.image-equil img {
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.image-equil:hover .img-overlay {
+    display: block;
+    cursor: pointer;
+}
+
 .crypto-note {
     display: flex;
     align-items: center;
@@ -74,22 +119,19 @@ p {
 .eth {
     color: var(--main-crypto-color);
     font-weight: 600;
+    display: flex;
 }
 
 .clock {
+    display: flex;
     font-weight: 600;
 }
 
 .icon {
     height: 15px;
+    margin-right: 5px;
 }
 
-.image-equil img {
-    border-radius: 10px;
-    max-height: 350px;
-    object-fit: cover;
-    width: 100%;
-}
 
 hr {
     border: 0;
